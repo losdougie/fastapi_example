@@ -27,3 +27,5 @@ useage for httpx:
         resp.raise_for_status()
 
         data = resp.json()
+
+this kind of async should be put in a "services" directory; pulled in with await
