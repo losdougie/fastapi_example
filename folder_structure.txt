@@ -1,0 +1,10 @@
+├───api
+│   └─── ...Api Files
+├───models
+│   └─── ...Model Files
+├───templates
+│   └─── ...Template Files
+├───venv
+│   └─── ...Virtual Environtment Files
+└───views
+    └─── ...HTML page views

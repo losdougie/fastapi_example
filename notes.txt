@@ -1,0 +1,29 @@
+Folder structure:
+
+api (folder)
+    used for apis
+
+views (folder)
+    used for serving regular pages
+
+templates (folder)
+    used for storing templates used by jinja
+
+models (folder)
+    used for creating pydantic models
+
+main.py
+    used to serve the page. APIs and views are brought in as fastapi routers
+
+
+As fastapi does more, more dependencies are required. E.g. Jinja2 needs to be installed for templating. aiofiles would be needed to serve files.
+
+
+If making connections to other sites, use httpx to get data instead of requests. httpx is async
+
+useage for httpx:
+    async with httpx.AsyncClient() as client:
+        resp = await client.get(url)
+        resp.raise_for_status()
+
+        data = resp.json()
